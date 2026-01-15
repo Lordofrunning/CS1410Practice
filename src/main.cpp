@@ -2,7 +2,8 @@
 
 int main(){
     // TODO
-    std::cout << "Hello World!" << std::endl;
+    std::cout << "Full Name: Tyler Chipman" << std::endl;
+    std::cout << "git hub name: LordofRunning" << std::endl; 
     
     return 0;
 }
