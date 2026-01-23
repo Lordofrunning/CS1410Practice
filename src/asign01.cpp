@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     int count = 0;
-    int numbers[] = {};
+    int numbers[5];
     while(count < 5){
         int num;
         cout << "give a number divisible by 3:" << endl;
@@ -45,7 +45,7 @@ int main(){
     int realavg = average / 5;
 
     cout << "count" << setw(10)  << "minimum" << setw(10) << "max" << setw(10) << "total" << setw(10) << "average" << endl;
-    cout << count << setw(13) << minvalue << setw(13) << maxvalue << setw(13) << total << setw(13) << realavg << endl;
+    cout << count << setw(10) << minvalue << setw(10) << maxvalue << setw(10) << total << setw(10) << realavg << endl;
 
     return 0;
 }
