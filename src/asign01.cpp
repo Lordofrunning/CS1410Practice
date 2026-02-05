@@ -11,7 +11,7 @@ int main(){
         int num;
         cout << "give a number divisible by 3:" << endl;
         cin >> num;
-        if(num % 3 == 0 || num > 0){
+        if(num % 3 == 0 && num > 0){
             cout << num << " added to collection" << endl;
             numbers[count] = num;
             count++; 
