@@ -15,8 +15,8 @@ public:
 
     string toRGB(){
         stringstream sout;
-        sout << "rgb(" << static_cast<int>(r * 255) << "," << << static_cast<int>(g * 255)
-        << "," << << static_cast<int>(b * 255) << ")";
+        sout << "rgb(" << static_cast<int>(r * 255) << "," <<  static_cast<int>(g * 255)
+        << "," <<  static_cast<int>(b * 255) << ")";
 
         return sout.str();
     }
@@ -24,7 +24,7 @@ public:
      string toHEX(){  // #01AC03
         stringstream sout;
         sout << "#" << setfill('0') << hex
-        << setw(2) << static_cast<int>(r * 255) \
+        << setw(2) << static_cast<int>(r * 255) 
         << setw(2) << static_cast<int>(g * 255)
         << setw(2) << static_cast<int>(b * 255);
 
