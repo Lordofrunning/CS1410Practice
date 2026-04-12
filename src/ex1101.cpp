@@ -8,7 +8,7 @@ int main(){
     const int N = 200;
     const int min_val = 1;
     const int max_val = 10;
-    const double mean = 55;
+    const double mean = 5.5;
     const double sd = 2.0;
 
     default_random_engine en;
