@@ -3,22 +3,24 @@
 
 using namespace std;
 
+
+template<typename T>
 class Calculator {
 private:
-    int a, b;
+    T a, b;
 public:
-    Calculator(int a, int b) : a(a), b(b) {}
+    Calculator(T a, T b) : a(a), b(b) {}
 
-    int add() const {
+    T add() const {
         return a + b;
     }
-    int subtract() const {
+    T subtract() const {
         return a - b;
     }
-    int multiply() const {
+    T multiply() const {
         return a * b;
     }
-    int divide() const {
+    T divide() const {
         if (b == 0) {
             throw runtime_error("Denominator cannot be zero");
         }
@@ -28,13 +30,13 @@ public:
 
 int main(){
     try {
-        Calculator calc(10,2);
+        Calculator<double> calc(10.5,2.7);
         cout << calc.add() << endl;
         cout << calc.subtract() << endl;
         cout << calc.multiply() << endl;
         cout << calc.divide() << endl;
 
-        Calculator calc1(4,0);
+        Calculator<int> calc1(4,0);
         cout << calc1.add() << endl;
         cout << calc1.subtract() << endl;
         cout << calc1.multiply() << endl;
